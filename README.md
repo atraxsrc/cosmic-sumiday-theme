@@ -69,7 +69,7 @@ carry it with rice-white text on top.
 │   ├── cosmic-sumi.jsonc          # Claude Desktop theme (claude-desktop-extra)
 │   └── install.sh
 ├── cosmic
-│   ├── SumiDay.ron                   # COSMIC Appearance import (Dark)
+│   ├── SumiDay.ron                   # COSMIC Appearance import (Light)
 │   ├── config/                  # baseline settings: fonts, icons, terminal look
 │   └── install.sh
 ├── cosmic-term
@@ -132,7 +132,9 @@ carry it with rice-white text on top.
 
 ## COSMIC Desktop
 
-Settings → Desktop → Appearance → **Dark** → **Import** → `cosmic/SumiDay.ron`
+This is a **Light** theme, so it goes in COSMIC's Light slot:
+
+Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/SumiDay.ron`
 
 Accent is moss ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658`. Use the `+` control if you want a custom swatch.
 
@@ -147,10 +149,6 @@ Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 Pairing tip: import `Sumi.ron` from
 [cosmic-sumi-theme](https://github.com/atraxsrc/cosmic-sumi-theme) into the
 Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
-Firefox and the shell layer do not follow the toggle; those are per-rice files.
-
-Sumi Day fills the Dark slot only. Put any other rice's light `.ron` in the Light
-slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
 Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
@@ -176,7 +174,7 @@ Icons below) and import the terminal scheme first, then:
 It backs up each file it replaces to `*.bak` and COSMIC applies it live.
 
 The interface font is the Light weight on purpose. COSMIC sets interface text
-brightness itself (the text tint only picks the hue), so on these dark panels
+brightness itself (the text tint only picks the hue), so on these light panels
 labels land near ![#524222](https://placehold.co/12x12/524222/524222.png) `#524222` whatever tint you choose; the thinner strokes are
 what calms them at night. Settings → Fonts lists only families, so the weight
 lives in `cosmic/config/com.system76.CosmicTk/v1/interface_font`.
@@ -188,8 +186,8 @@ lives in `cosmic/config/com.system76.CosmicTk/v1/interface_font`.
 The desktop `.ron` does not colour ANSI text.
 
 1. COSMIC Terminal → **View → Color schemes…** (not Settings → Appearance)
-2. Dark tab → **Import** → `cosmic-term/SumiDay-term.ron`
-3. View → Settings → Appearance → Color scheme (dark) → **Sumi Day**
+2. Light tab → **Import** → `cosmic-term/SumiDay-term.ron`
+3. View → Settings → Appearance → Color scheme (light) → **Sumi Day**
 
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
@@ -217,7 +215,7 @@ Two layers:
    This is the main look.
 2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, moss
    menu hover, moss accents and blank new-tab tiles on top of the theme
-   (they also work with Firefox's built-in Dark theme):
+   (they also work with Firefox's built-in Light theme):
 
 ```bash
 ./firefox/install.sh
@@ -439,7 +437,7 @@ cp btop/SumiDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-SumiDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Moss** ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658` (default), **Vermilion** ![#AC3320](https://placehold.co/12x12/ac3320/ac3320.png) `#AC3320` and **Dark** ![#E4DED2](https://placehold.co/12x12/e4ded2/e4ded2.png) `#E4DED2` with moss symbols.
+three colors: **Moss** ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658` (default), **Vermilion** ![#AC3320](https://placehold.co/12x12/ac3320/ac3320.png) `#AC3320` and **Dark** ![#1C1B19](https://placehold.co/12x12/1c1b19/1c1b19.png) `#1C1B19` with moss symbols.
 
 ![Cosmic-SumiDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-SumiDay.png)
 
@@ -472,10 +470,10 @@ git clone https://github.com/atraxsrc/cosmic-sumiday-theme.git
 cd cosmic-sumiday-theme
 
 # desktop
-# Settings → Appearance → Dark → Import cosmic/SumiDay.ron
+# Settings → Appearance → Light → Import cosmic/SumiDay.ron
 
 # terminal
-# View → Color schemes → Import cosmic-term/SumiDay-term.ron
+# View → Color schemes → Light tab → Import cosmic-term/SumiDay-term.ron
 
 # firefox theme: about:debugging → Load Temporary Add-on → firefox/theme/manifest.json
 # (or zip and sign it, see firefox/README.md)
@@ -532,7 +530,7 @@ the same script.
 
 It backs up every file it replaces, then:
 
-- copies `cosmic/config/` (fonts, terminal look, icons) and turns dark mode on.
+- copies `cosmic/config/` (fonts, terminal look, icons) and turns light mode on.
   The terminal scheme and icon theme are only replaced when the current one is
   not already a Sumi Day variant, so a dimmer text variant or another icon colour
   survives. Icons stay as they are until `./icons/install.sh` has run.
@@ -548,8 +546,8 @@ It backs up every file it replaces, then:
 
 The GUI steps it cannot do are printed at the end:
 
-1. Settings → Desktop → Appearance → Dark → Import `cosmic/SumiDay.ron`
-2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/SumiDay-term.ron`
+1. Settings → Desktop → Appearance → Light → Import `cosmic/SumiDay.ron`
+2. COSMIC Terminal → View → Color schemes → Light tab → Import `cosmic-term/SumiDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
 5. Claude Desktop: Ctrl+Shift+T → `cosmic-sumi`, Appearance → Light

@@ -41,16 +41,16 @@ Code is coloured the way Neovim is in the rice (`nvim/colors/*.lua`):
 | Role | Sumi | Sumi Day |
 |------|---|---|
 | Keywords, tags | ![#8B9388](https://placehold.co/12x12/8b9388/8b9388.png) `#8B9388` | ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658` |
-| Functions, tag attributes | ![#C2A46D](https://placehold.co/12x12/C9C2B4/C9C2B4.png) `#C2A46D` | ![#745E30](https://placehold.co/12x12/C9C2B4/C9C2B4.png) `#745E30` |
-| Strings | ![#9FA89C](https://placehold.co/12x12/9FA5A9/9FA5A9.png) `#9FA89C` | ![#5D635A](https://placehold.co/12x12/9FA5A9/9FA5A9.png) `#5D635A` |
-| Numbers, constants | ![#E07969](https://placehold.co/12x12/D87C4A/D87C4A.png) `#E07969` | ![#A23A2A](https://placehold.co/12x12/D87C4A/D87C4A.png) `#A23A2A` |
+| Functions, tag attributes | ![#C2A46D](https://placehold.co/12x12/c2a46d/c2a46d.png) `#C2A46D` | ![#745E30](https://placehold.co/12x12/745e30/745e30.png) `#745E30` |
+| Strings | ![#9FA89C](https://placehold.co/12x12/9fa89c/9fa89c.png) `#9FA89C` | ![#5D635A](https://placehold.co/12x12/5d635a/5d635a.png) `#5D635A` |
+| Numbers, constants | ![#E07969](https://placehold.co/12x12/e07969/e07969.png) `#E07969` | ![#A23A2A](https://placehold.co/12x12/a23a2a/a23a2a.png) `#A23A2A` |
 | Types, classes, modules | ![#75897F](https://placehold.co/12x12/75897f/75897f.png) `#75897F` | ![#54645A](https://placehold.co/12x12/54645a/54645a.png) `#54645A` |
-| Imports, macros, decorators, escapes, `this` / `self` | ![#A68C5C](https://placehold.co/12x12/9D7E6F/9D7E6F.png) `#A68C5C` | ![#765F35](https://placehold.co/12x12/9D7E6F/9D7E6F.png) `#765F35` |
-| Parameters (italic) | ![#A19C94](https://placehold.co/12x12/A5AEB4/A5AEB4.png) `#A19C94` | ![#656058](https://placehold.co/12x12/A5AEB4/A5AEB4.png) `#656058` |
-| Operators, punctuation | ![#817E77](https://placehold.co/12x12/7F7F7F/7F7F7F.png) `#817E77` | ![#64615E](https://placehold.co/12x12/7F7F7F/7F7F7F.png) `#64615E` |
-| Comments (italic) | ![#5F5D58](https://placehold.co/12x12/565D60/565D60.png) `#5F5D58` | ![#979590](https://placehold.co/12x12/565D60/565D60.png) `#979590` |
+| Imports, macros, decorators, escapes, `this` / `self` | ![#A68C5C](https://placehold.co/12x12/a68c5c/a68c5c.png) `#A68C5C` | ![#765F35](https://placehold.co/12x12/765f35/765f35.png) `#765F35` |
+| Parameters (italic) | ![#A19C94](https://placehold.co/12x12/a19c94/a19c94.png) `#A19C94` | ![#656058](https://placehold.co/12x12/656058/656058.png) `#656058` |
+| Operators, punctuation | ![#817E77](https://placehold.co/12x12/817e77/817e77.png) `#817E77` | ![#64615E](https://placehold.co/12x12/64615e/64615e.png) `#64615E` |
+| Comments (italic) | ![#5F5D58](https://placehold.co/12x12/5f5d58/5f5d58.png) `#5F5D58` | ![#979590](https://placehold.co/12x12/979590/979590.png) `#979590` |
 | Accent | ![#8B9388](https://placehold.co/12x12/8b9388/8b9388.png) `#8B9388` | ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658` |
-| Errors, deleted, conflicts | ![#DA614E](https://placehold.co/12x12/DE6145/DE6145.png) `#DA614E` | ![#AC3320](https://placehold.co/12x12/DE6145/DE6145.png) `#AC3320` |
+| Errors, deleted, conflicts | ![#DA614E](https://placehold.co/12x12/da614e/da614e.png) `#DA614E` | ![#AC3320](https://placehold.co/12x12/ac3320/ac3320.png) `#AC3320` |
 
 The workbench takes the window colour of the rice's `cosmic/SumiDay.ron` for the
 editor, side bars, panel, title and status bar, the container colours for

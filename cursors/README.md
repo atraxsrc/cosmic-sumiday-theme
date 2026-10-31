@@ -10,7 +10,7 @@ All patched so they work in COSMIC's own apps.
 | ------- | ------- | ---- | ------------------- | --------- |
 | **Moss** (default) | ![](../assets/cursors/Oxygen-SumiDay-Moss.png) | ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658` | 5.0:1 | Moss folders |
 | **Vermilion** | ![](../assets/cursors/Oxygen-SumiDay-Vermilion.png) | ![#AC3320](https://placehold.co/12x12/ac3320/ac3320.png) `#AC3320` | 5.2:1 | Vermilion folders |
-| **Dark** | ![](../assets/cursors/Oxygen-SumiDay-Dark.png) | ![#E4DED2](https://placehold.co/12x12/e4ded2/e4ded2.png) `#E4DED2` | 1.1:1 | Dark folders |
+| **Dark** | ![](../assets/cursors/Oxygen-SumiDay-Dark.png) | ![#1C1B19](https://placehold.co/12x12/1c1b19/1c1b19.png) `#1C1B19` | 14.1:1 | Dark folders |
 
 Each variant is a normal folder here (`Oxygen-SumiDay-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.

@@ -4,8 +4,8 @@ Colour schemes for COSMIC Terminal. The desktop `.ron` in `cosmic/` does not
 colour ANSI text, so the terminal needs its own import.
 
 1. COSMIC Terminal → **View → Color schemes…** (not Settings → Appearance)
-2. **Dark** tab → **Import** → a `.ron` from this folder
-3. View → Settings → Appearance → Color scheme (dark) → the scheme name
+2. **Light** tab → **Import** → a `.ron` from this folder
+3. View → Settings → Appearance → Color scheme (light) → the scheme name
 
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing. `cosmic/install.sh` selects **Sumi Day**,
@@ -52,7 +52,7 @@ Previews are rendered in Fira Mono on the theme background ![#EDE8DE](https://pl
 taken from the terminal. In COSMIC you get Maple Mono at 77% opacity over the
 wallpaper, so text looks a little softer and contrast a little lower.
 
-## Dark
+## Light
 
 **Sumi Day** · `SumiDay-term.ron` · ink ![#1C1B19](https://placehold.co/12x12/1c1b19/1c1b19.png) `#1C1B19`, 14.1:1. The default.
 
