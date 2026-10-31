@@ -6,7 +6,8 @@
 
 Pop!_OS 24.04 on COSMIC in paper, ink and moss: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. A light rice in ink-wash greys;
-vermilion is kept for what is wrong.
+vermilion is kept for what is wrong. The light half of a pair;
+the dark half is [cosmic-sumi-theme](https://github.com/atraxsrc/cosmic-sumi-theme).
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-566658?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-5d635a?style=for-the-badge)
@@ -41,6 +42,14 @@ colour is at least 4.5:1 on the window background.
 | Dim | ![#979590](https://placehold.co/12x12/979590/979590.png) Comments | ![#979590](https://placehold.co/12x12/979590/979590.png) `#979590` |
 | Lines | ![#b5ada0](https://placehold.co/12x12/b5ada0/b5ada0.png) Box lines, inactive | ![#B5ADA0](https://placehold.co/12x12/b5ada0/b5ada0.png) `#B5ADA0` |
 
+| Role | Sumi Day | Sumi |
+|------|---|---|
+| Background | ![#EDE8DE](https://placehold.co/12x12/ede8de/ede8de.png) `#EDE8DE` | ![#050505](https://placehold.co/12x12/050505/050505.png) `#050505` |
+| Text | ![#1C1B19](https://placehold.co/12x12/1c1b19/1c1b19.png) `#1C1B19` | ![#D6D0C5](https://placehold.co/12x12/d6d0c5/d6d0c5.png) `#D6D0C5` |
+| Accent | ![#566658](https://placehold.co/12x12/566658/566658.png) `#566658` | ![#8B9388](https://placehold.co/12x12/8b9388/8b9388.png) `#8B9388` |
+| Success | ![#5D635A](https://placehold.co/12x12/5d635a/5d635a.png) `#5D635A` | ![#9FA89C](https://placehold.co/12x12/9fa89c/9fa89c.png) `#9FA89C` |
+| Error | ![#AC3320](https://placehold.co/12x12/ac3320/ac3320.png) `#AC3320` | ![#DA614E](https://placehold.co/12x12/da614e/da614e.png) `#DA614E` |
+
 The accent is moss, 5.0:1 on the background and 5.5:1 on a container,
 so it stays the same colour wherever it is text; buttons and selections
 carry it with rice-white text on top.
@@ -57,7 +66,7 @@ carry it with rice-white text on top.
 ├── btop
 │   └── SumiDay.theme                 # btop colour theme
 ├── claude-desktop
-│   ├── cosmic-sumiday.jsonc          # Claude Desktop theme (claude-desktop-extra)
+│   ├── cosmic-sumi.jsonc          # Claude Desktop theme (claude-desktop-extra)
 │   └── install.sh
 ├── cosmic
 │   ├── SumiDay.ron                   # COSMIC Appearance import (Dark)
@@ -96,7 +105,7 @@ carry it with rice-white text on top.
 │   ├── cosmic-sumiday.tdesktop-theme # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── vscode
-│   ├── themes/                  # Cursor / VS Code colour theme, Cosmic Sumi Day
+│   ├── themes/                  # Cursor / VS Code colour themes, Sumi (dark) + Sumi Day (light)
 │   ├── package.json             # extension manifest
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
@@ -134,6 +143,11 @@ applets and system UI (maximized apps stay solid), and corners are squared
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Sumi.ron` from
+[cosmic-sumi-theme](https://github.com/atraxsrc/cosmic-sumi-theme) into the
+Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 Sumi Day fills the Dark slot only. Put any other rice's light `.ron` in the Light
 slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
@@ -230,9 +244,10 @@ packing a `.crx`: [`brave/README.md`](brave/README.md).
 ## Claude Desktop
 
 For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
-Linux build. `claude-desktop/cosmic-sumiday.jsonc` carries the Sumi Day palette in
-both of the file's blocks, so Claude's own Settings → Appearance toggle makes
-no difference. Colours come from `cosmic/SumiDay.ron`, contrast-checked (text and
+Linux build. `claude-desktop/cosmic-sumi.jsonc` is one theme with both halves:
+Sumi in dark mode and Sumi Day in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and
 button text 4.5:1, accents 3:1).
 
 ```bash
@@ -240,19 +255,23 @@ button text 4.5:1, accents 3:1).
 ```
 
 It copies the file into `~/.config/Claude/themes.d/`. Then press
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-sumiday**.
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-sumi**.
+
+The same file ships in [`cosmic-sumi-theme`](https://github.com/atraxsrc/cosmic-sumi-theme),
+so installing from either repo gives the same theme.
 
 ---
 
 ## Cursor editor
 
-`vscode/` is a colour theme extension for [Cursor](https://cursor.com):
-**Cosmic Sumi Day**. It is a plain VS Code theme extension, so VS Code and VSCodium
-take it too. Code is coloured the way Neovim is in the rice; the workbench is
-paper with rice menus, hovers and inputs, moss on the active tab, buttons
-and menu highlight, and the integrated terminal uses the COSMIC Terminal
-scheme. Cursor builds its Agent and chat panels from the same theme colours,
-so they follow along.
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic Sumi** and **Cosmic Sumi Day**. It is a
+plain VS Code theme extension, so VS Code and VSCodium take it too, and the
+same extension ships in cosmic-sumi-theme. Code is coloured the way Neovim is
+in the rice; the workbench is paper with rice menus, hovers and inputs, moss
+on the active tab, buttons and menu highlight, and the integrated terminal
+uses the COSMIC Terminal scheme. Cursor builds its Agent and chat panels from
+the same theme colours, so they follow along.
 
 ```bash
 ./vscode/install.sh
@@ -261,8 +280,9 @@ so they follow along.
 It packs `vscode/` into a `.vsix` and installs it with
 `cursor --install-extension`; run it again after editing the theme. Then press
 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
-**Cosmic Sumi Day**. The colours and the contrast notes are in
-[`vscode/README.md`](vscode/README.md).
+**Cosmic Sumi Day**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between Sumi and Sumi Day; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -290,6 +310,9 @@ background is plain paper; to put a wallpaper behind the chat instead
 
 Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
 premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so Sumi, the dark half, ships its
+own theme.
 
 ---
 
@@ -529,11 +552,16 @@ The GUI steps it cannot do are printed at the end:
 2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/SumiDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
-5. Claude Desktop: Ctrl+Shift+T → `cosmic-sumiday`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-sumi`, Appearance → Light
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
 
 Skip 1 and 2 when that slot already holds Sumi Day. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Sumi Day ↔ [Sumi](https://github.com/atraxsrc/cosmic-sumi-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Leaving Sumi Day is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
 puts the Pop cursor back.
