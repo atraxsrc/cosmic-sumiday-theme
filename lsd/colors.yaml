@@ -1,0 +1,41 @@
+# 256-colour codes nearest the Sumi Day palette on paper (lsd 1.0.0 does not accept
+# #hex here): 59 moss, 130 vermilion, 130 coral, 59 lichen, 240 gold,
+# 240 fern, 241 stone, 246 dusk.
+user: 240
+group: 241
+permission:
+  read: 241
+  write: 240
+  exec: 59
+  exec-sticky: 59
+  no-access: 246
+  octal: 240
+  acl: 240
+  context: 240
+date:
+  hour-old: 240
+  day-old: 59
+  older: 246
+size:
+  none: 246
+  small: 59
+  medium: 240
+  large: 130
+inode:
+  valid: 59
+  invalid: 130
+links:
+  valid: 240
+  invalid: 130
+tree-edge: 246
+git-status:
+  default: 246
+  unmodified: 246
+  ignored: 246
+  new-in-index: 59
+  new-in-workdir: 59
+  typechange: 240
+  deleted: 130
+  renamed: 240
+  modified: 130
+  conflicted: 130
