@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Sumi Day",
+  "version": "1.0",
+  "description": "Paper theme from the COSMIC Sumi Day rice: lichen icons, one moss accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [237, 232, 222],
+      "frame_inactive": [237, 232, 222],
+      "frame_incognito": [237, 232, 222],
+      "frame_incognito_inactive": [237, 232, 222],
+      "background_tab": [237, 232, 222],
+      "background_tab_inactive": [237, 232, 222],
+      "background_tab_incognito": [237, 232, 222],
+      "background_tab_incognito_inactive": [237, 232, 222],
+      "toolbar": [247, 243, 235],
+      "tab_text": [86, 102, 88],
+      "tab_background_text": [93, 99, 90],
+      "tab_background_text_inactive": [93, 99, 90],
+      "tab_background_text_incognito": [93, 99, 90],
+      "tab_background_text_incognito_inactive": [93, 99, 90],
+      "bookmark_text": [28, 27, 25],
+      "toolbar_button_icon": [93, 99, 90],
+      "omnibox_background": [217, 210, 197],
+      "omnibox_text": [28, 27, 25],
+      "ntp_background": [237, 232, 222],
+      "ntp_text": [28, 27, 25],
+      "ntp_link": [86, 102, 88]
+    }
+  }
+}

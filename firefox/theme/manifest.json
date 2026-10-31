@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Sumi Day",
+  "version": "1.0",
+  "description": "Paper theme from the COSMIC Sumi Day rice: lichen icons, one moss accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{78a4ce1d-22b4-421b-ac5c-7f92c02eb50f}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#F7F3EB",
+      "toolbar_text": "#1c1b19",
+      "frame": "#EDE8DE",
+      "tab_background_text": "#5d635a",
+      "tab_text": "#566658",
+      "toolbar_field": "#d9d2c5",
+      "toolbar_field_text": "#1c1b19",
+      "toolbar_field_border_focus": "#566658",
+      "toolbar_field_highlight": "#566658",
+      "toolbar_field_highlight_text": "#EDE8DE",
+      "tab_line": "#566658",
+      "popup": "#F7F3EB",
+      "popup_text": "#1c1b19",
+      "button_background_active": "#566658",
+      "button_background_hover": "#d9d2c5",
+      "frame_inactive": "#EDE8DE",
+      "icons_attention": "#566658",
+      "icons": "#5d635a",
+      "ntp_background": "#EDE8DE",
+      "ntp_text": "#1c1b19",
+      "popup_border": "#54645A",
+      "popup_highlight_text": "#EDE8DE",
+      "popup_highlight": "#566658",
+      "sidebar_border": "#d9d2c5",
+      "sidebar_highlight_text": "#EDE8DE",
+      "sidebar_highlight": "#566658",
+      "sidebar_text": "#1c1b19",
+      "tab_loading": "#566658"
+    }
+  }
+}

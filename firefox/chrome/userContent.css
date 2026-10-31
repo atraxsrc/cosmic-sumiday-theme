@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Sumi Day - userContent.css
+   Ported from the DarkGold baseline, recoloured for the COSMIC Sumi Day palette
+
+   New tab / home / private pages only:
+     - moss accent and focus, fern links
+     - moss focus ring on shortcut tiles, moss personalize button
+     - shortcut artwork hidden (tiles stay, icons go blank)
+   No size / position changes.
+
+   Install:  chrome/userContent.css   (same pref + restart as userChrome.css)
+   ========================================================================== */
+
+@-moz-document url-prefix("about:newtab"),
+               url-prefix("about:home"),
+               url-prefix("about:privatebrowsing") {
+
+  :root {
+    --newtab-primary-action-background: #566658 !important;
+    --newtab-primary-action-background-dimmed: rgba(86, 102, 88, 0.25) !important;
+
+    --color-accent-primary: #566658 !important;
+    --color-accent-primary-hover: #48554A !important;
+    --color-accent-primary-active: #566658 !important;
+
+    --newtab-focus-border: #566658 !important;
+    --newtab-focus-outline: #566658 !important;
+    --newtab-textbox-focus-color: #566658 !important;
+
+    --in-content-accent-color: #566658 !important;
+    --in-content-accent-color-active: #5D635A !important;
+    --in-content-focus-outline-color: #566658 !important;
+
+    --link-color: #54645A !important;
+    --link-color-hover: #0E0E0D !important;
+
+    --focus-outline-color: #566658 !important;
+    --focus-outline: 2px solid #566658 !important;
+    --newtab-button-focus-border: #566658 !important;
+    --button-background-color: #566658 !important;
+    --button-text-color: #EDE8DE !important;
+  }
+
+  .top-site-outer:is(:focus, :focus-visible, .active) .tile,
+  .top-site-outer .top-site-button:focus .tile,
+  .top-site-outer .top-site-button:focus-visible .tile {
+    outline: 2px solid #566658 !important;
+    border-color: #566658 !important;
+  }
+
+  .personalize-button {
+    background-color: #566658 !important;
+    color: #EDE8DE !important;
+  }
+
+  /* Hide shortcut artwork so tiles stay blank */
+  .top-site-icon,
+  .top-site-icon.rich-icon,
+  .top-site-icon.default-icon,
+  .screenshot,
+  .screenshot.active,
+  .letter-fallback {
+    background-image: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
+  }
+}
