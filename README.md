@@ -453,7 +453,7 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `sumiday-<subject>`:
-the same five ink-wash dragons as Sumi, lifted into Sumi Day's paper tones: the roar, the dragon in cloud,
+the same five ink-wash dragons as Sumi, their paper pinned to Sumi Day's window colour: the roar, the dragon in cloud,
 a breath of smoke, a monk before the dragon and the descent, plus the
 anime portrait from the screenshot (`sumiday-anime.png`) in the palette's
 own tones. The roar (`sumiday-roar.png`) is the one in `assets/wallpaper.png`
