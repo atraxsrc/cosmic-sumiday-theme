@@ -66,6 +66,17 @@ fi
 
 (( $+commands[cosmic-edit] )) && alias edit='cosmic-edit'
 
+# lazygit reads one config file; stack the rice colours (lazygit/sumiday.yml,
+# installed by ./lazygit/install.sh) on top of your own config.yml
+if (( $+commands[lazygit] )); then
+    _sumiday_lg="${XDG_CONFIG_HOME:-$HOME/.config}/lazygit"
+    if [[ -f $_sumiday_lg/sumiday.yml ]]; then
+        export LG_CONFIG_FILE="$_sumiday_lg/sumiday.yml"
+        [[ -f $_sumiday_lg/config.yml ]] && LG_CONFIG_FILE="$_sumiday_lg/config.yml,$LG_CONFIG_FILE"
+    fi
+    unset _sumiday_lg
+fi
+
 if (( $+commands[nvim] )); then
     alias vi='nvim'
     alias vim='nvim'

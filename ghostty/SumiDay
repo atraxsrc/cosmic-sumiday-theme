@@ -1,0 +1,45 @@
+# SumiDay for Ghostty, part of cosmic-sumiday-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = SumiDay
+# or, with the Sumi half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:Sumi,light:SumiDay
+
+background = #EDE8DE
+foreground = #1C1B19
+
+cursor-color = #566658
+cursor-text = #EDE8DE
+
+selection-background = #D9D2C5
+selection-foreground = #1C1B19
+
+split-divider-color = #D9D2C5
+unfocused-split-fill = #EDE8DE
+
+# black
+palette = 0=#E4DED2
+palette = 8=#979590
+# red
+palette = 1=#AC3320
+palette = 9=#8A291A
+# green
+palette = 2=#5D635A
+palette = 10=#4B5049
+# yellow
+palette = 3=#745E30
+palette = 11=#5E4C27
+# blue
+palette = 4=#566658
+palette = 12=#48554A
+# magenta
+palette = 5=#A23A2A
+palette = 13=#822E22
+# cyan
+palette = 6=#5A6363
+palette = 14=#5A6363
+# white
+palette = 7=#5A5449
+palette = 15=#0E0E0D

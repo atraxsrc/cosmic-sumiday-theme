@@ -1,0 +1,37 @@
+# SumiDay for lazygit, part of cosmic-sumiday-theme (MIT). Only the colours: your
+# own ~/.config/lazygit/config.yml keeps the rest.
+#
+# Install: ./lazygit/install.sh puts this in ~/.config/lazygit/sumiday.yml and
+# zsh/sumiday.zsh sets LG_CONFIG_FILE to "config.yml,sumiday.yml" so lazygit
+# reads both (the later file wins). Without the zsh layer:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/sumiday.yml"
+gui:
+  theme:
+    activeBorderColor:
+      - "#566658"
+      - bold
+    inactiveBorderColor:
+      - "#D9D2C5"
+    searchingActiveBorderColor:
+      - "#A23A2A"
+      - bold
+    optionsTextColor:
+      - "#54645A"
+    selectedLineBgColor:
+      - "#E4DED2"
+    inactiveViewSelectedLineBgColor:
+      - "#F7F3EB"
+    cherryPickedCommitFgColor:
+      - "#EDE8DE"
+    cherryPickedCommitBgColor:
+      - "#745E30"
+    markedBaseCommitFgColor:
+      - "#EDE8DE"
+    markedBaseCommitBgColor:
+      - "#5D635A"
+    unstagedChangesColor:
+      - "#AC3320"
+    defaultFgColor:
+      - "#1C1B19"
+  authorColors:
+    "*": "#745E30"
