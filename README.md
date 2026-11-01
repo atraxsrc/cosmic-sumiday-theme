@@ -13,6 +13,7 @@ the dark half is [cosmic-sumi-theme](https://github.com/atraxsrc/cosmic-sumi-the
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-5d635a?style=for-the-badge)
 ![Sumi Day](https://img.shields.io/badge/Theme-SumiDay-ede8de?style=for-the-badge&labelColor=566658)
 ![Firefox](https://img.shields.io/badge/Firefox-SumiDay-566658?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-566658?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-64615e?style=for-the-badge)
 
 </div>
