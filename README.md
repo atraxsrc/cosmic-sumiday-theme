@@ -128,6 +128,8 @@ carry it with rice-white text on top.
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── notesnook
+│   └── cosmic-sumiday.json      # Notesnook theme, SumiDay (light)
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── obsidian
 │   ├── cosmic-sumi.css          # CSS snippet, Sumi (dark) + Sumi Day (light)
@@ -412,6 +414,22 @@ in ![#745E30](https://placehold.co/12x12/745e30/745e30.png) `#745E30`. The same 
 
 It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
 vault, so run it once per vault.
+
+---
+
+## Notesnook
+
+`notesnook/cosmic-sumiday.json` is a [Notesnook](https://notesnook.com/) theme for SumiDay,
+built from the same palette as the Obsidian snippet: window, list and sidebar
+backgrounds, text, accent, selection and the error / success colours. A
+Notesnook theme holds one colour scheme, so the Sumi half ships as
+`notesnook/cosmic-sumi.json` in cosmic-sumi-theme; load both if you switch between
+dark and light.
+
+```text
+Notesnook → Settings → Appearance → Themes → Load from file
+→ pick notesnook/cosmic-sumiday.json → Set as default
+```
 
 ---
 
