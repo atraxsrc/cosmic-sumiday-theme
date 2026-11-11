@@ -72,7 +72,7 @@
     frosted_panel: true,
     frosted_applets: true,
     frosted_maximized_apps: false,
-    icon_theme: "Cosmic-SumiDay-Moss",
+    icon_theme: "Cosmic-SumiDay-Dark",
     font: (
         family: "Maple Mono Normal",
         weight: Light,
